@@ -5,3 +5,8 @@
 body {
   font-family: 'Open Sans', sans-serif;
 }
+
+.social__media li {
+  color: white;
+  width: 30px;
+}
