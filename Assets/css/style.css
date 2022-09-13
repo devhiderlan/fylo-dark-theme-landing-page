@@ -3,14 +3,14 @@
 /*  font-family: 'Raleway', sans-serif; */
 
 :root {
-  --Dark-Blue-intro-email-bg: #1c2431;
-  --Dark-Blue-main-bg: #181f2a;
-  --Dark-Blue-footer-bg: #0b1523;
-  --Dark-Blue-testimonials-bg: #202a3c;
-  --Cyan: #65e2d9;
-  --Blue: #339ecc;
-  --Light-Red: #ff4242;
-  --White: #ffffff;
+  --Dark-Blue-intro-email-bg: hsl(217, 27%, 15%);
+  --Dark-Blue-main-bg: hsl(217, 27%, 13%);
+  --Dark-Blue-footer-bg: hsl(215, 52%, 9%);
+  --Dark-Blue-testimonials-bg: hsl(219, 30%, 18%);
+  --Cyan: hsl(176, 68%, 64%);
+  --Blue: hsl(198, 60%, 50%);
+  --Light-Red: hsl(0, 100%, 63%);
+  --White: hsl(0, 0%, 100%);
 }
 
 * {
@@ -111,3 +111,104 @@ ul.nav__bar li a:hover {
   top: -210px;
   z-index: -1;
 }
+
+.section-2 {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: -210px;
+  z-index: -1;
+}
+
+.services {
+  width: 70%;
+  min-height: 50vh;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.service-wrapper {
+  margin: 30px 0;
+}
+
+.service-wrapper img {
+  width: 70px;
+  height: auto;
+  line-height: 1.5rem;
+  margin-bottom: 50px;
+}
+
+.service-desc {
+  width: 400px;
+  line-height: 1.5rem;
+  margin-bottom: 25px;
+}
+
+.service-desc h2 {
+  font-size: 1.2rem;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 10px;
+}
+
+@media screen and (ma-width: 375px) {
+  nav {
+    width: 90%;
+  }
+
+  .logo {
+    width: 70px;
+    height: auto;
+  }
+
+  ul.nav__bar li {
+    width: 70px;
+    margin-right: 5px;
+  }
+
+  ul.nav__bar li:nth-child(2) {
+    width: 50px; 
+  }
+  .section-1 {
+    width: 300px;
+    margin: auto;
+  }
+  .illustration {
+    width: 350px;
+  }
+
+  .intro-desc {
+    width: 300px;
+    margin: auto;
+  }
+
+  .intro-desc h1 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .intro-desc p {
+    width: 318px;
+    line-height: 1.5rem;
+  }
+
+  #btn {
+    width: 200px;
+  }
+
+  .curvy-bg {
+    display: none;
+  }
+
+  /* Media query section 2 */
+
+  .services {
+    width: 85%;
+    margin: 250px auto 0;
+  }
+}
+
+
