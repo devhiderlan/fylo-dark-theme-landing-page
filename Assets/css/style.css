@@ -32,6 +32,8 @@ html {
 body {
   background-color: var(--main-bg);
   color: var(--White);
+  margin: auto;
+  max-width: 1440px;
 }
 
 h2,
@@ -137,4 +139,28 @@ h2 {
 
 /* EXTRA-DESCRIPTION SECTION */
 
+.extra-description {
+  display: flex;
+  align-items: center;
+  padding: 0 100px;
+}
 
+
+.img__box img {
+  height: 468px;
+  width: auto;
+  margin-right: 45px;
+}
+
+.text__box :not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.desc__link {
+  color: var(--Cyan);
+  border-bottom: 1px solid var(--Cyan);
+}
+
+.desc__link img {
+  vertical-align: middle;
+}
