@@ -61,17 +61,17 @@ h2 {
 /* NAV SECTION */
 
 .nav {
-  width: 100%;
-  display: flex;
   align-items: center;
+  background-color: var(--intro-email-bg);
+  display: flex;
   justify-content: space-between;
   padding: 73px 80px;
-  background-color: var(--intro-email-bg);
+  width: 100%;
 }
 
 .nav__items {
-  display: flex;
   align-items: center;
+  display: flex;
 }
 
 .nav__items :not(:last-child) {
@@ -81,16 +81,15 @@ h2 {
 /* HERO SECTION */
 
 .hero {
+  align-items: center;
+  background: var(--intro-email-bg) url(../images/bg-curvy-desktop.svg) bottom no-repeat;
+  background-size: 100% 278px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  text-align: center;
-  width: 100%;
   min-height: 100vh;
-  background: var(--intro-email-bg) url(../images/bg-curvy-desktop.svg) bottom
-    no-repeat;
-  background-size: 100% 278px;
+  width: 100%;
+  text-align: center;
 }
 
 .hero img {
@@ -121,12 +120,12 @@ h2 {
 /* FEATURES SECTION */
 
 .features {
+  display: grid;
+  gap: 94px 158px;
+  grid-template-columns: repeat(2, 1fr);
   margin: 130px 0;
   padding: 0 280px;
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 94px 158px;
 }
 
 .feature {
@@ -140,16 +139,16 @@ h2 {
 /* EXTRA-DESCRIPTION SECTION */
 
 .extra-description {
-  display: flex;
   align-items: center;
+  display: flex;
   padding: 0 100px;
 }
 
 
 .img__box img {
+  margin-right: 45px;
   height: 468px;
   width: auto;
-  margin-right: 45px;
 }
 
 .text__box :not(:last-child) {
@@ -164,3 +163,55 @@ h2 {
 .desc__link img {
   vertical-align: middle;
 }
+
+/* TESTIMONIAL SECTION */
+
+.testimonials {
+  display: grid;
+  gap: 48px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 140px;
+}
+
+.testimonial {
+  background: var(--testimonials-bg);
+  border-radius: 5px;
+  padding: 40px 30px 0 30px;
+  position: relative;
+}
+
+.testimonial::before {
+  content: url(../images/bg-quotes.png);
+  position: absolute;
+  left: -10px;
+  top: -35px;
+  z-index: -1;
+}
+
+.testimonial p {
+  margin-bottom: 25px;
+}
+
+.profile {
+   display: flex;
+}
+
+.profile img {
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+
+.profile__info h3 {
+  font-size: 10px;
+  margin-bottom: 3px;
+}
+
+.profile__info p {
+  font-size: 8px;
+}
+
+
+
