@@ -8,77 +8,34 @@
   </head>
 
   <body>
-    <nav>
-      <img class="logo" src="./Assets/images/logo.svg" alt="logo" />
-      <ul class="nav__bar">
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Team</a></li>
-        <li><a href="#">Sign In</a></li>
-      </ul>
-    </nav>
+    <header>
+      <nav class="nav">
+        <a href="" class="brand__logo">
+          <img src="./Assets/images/logo.svg" alt="" />
+        </a>
+        <ul class="nav__items">
+          <li class="nav__links"><a href="#">Features</a></li>
+          <li class="nav__links"><a href="#">Team</a></li>
+          <li class="nav__links"><a href="#">Sign In</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <section class="section-1">
-      <img class="illustration" src="./Assets/images/illustration-intro.png" alt="" />
-      <div class="intro-desc">
-        <h1>All your files in one secure location, accessible anywhere.</h1>
+    <main>
+      <section class="hero">
+        <img src="./Assets/images/illustration-intro.png" alt="" />
+        <h2 class="first__title-heading">
+          All your files in one secure location, accessible anywhere.
+        </h2>
         <p>
           Fylo stores all your most important files in one secure location.
           Access them wherever you need, share and collaborate with friends
           family, and co-workers.
         </p>
-        <button type="button" id="btn"> <a href="#">Get Started</a></button>
-      </div>
-      <img src="./Assets/images/bg-curvy-desktop.svg" alt="image" class="curvy-bg">
-    </section>
-
-    <section class="section-2">
-      <div class="services">
-
-        <div class="service-wrapper">
-          <img src="./Assets/images/icon-access-anywhere.svg" alt="" class="icon-1">
-          <div class="service-desc">
-            <h2>Access your files, anywhere</h2>
-            <p>
-              The ability to use a smartphone, tablet, or computer to access your
-              account means your files follow you everywhere.
-          </div>
-          </p>
-        </div>
-
-        <div class="service-wrapper">
-          <img src="./Assets/images/icon-security.svg" alt="" class="icon-2">
-          <div class="service-desc">
-            <h2>Security you can trust</h2>
-            <p>
-              2-factor authentication and user-controlled encryption are just a
-              couple of the security eatures we allow to help secure your files.
-          </div>
-          </p>
-        </div>
-
-        <div class="service-wrapper">
-          <img src="./Assets/images/icon-collaboration.svg" alt="" class="icon-3">
-          <div class="service-desc">
-            <h2>Real-time collaboration</h2>
-            <p>
-              Securely share files and folders with friends, family and colleagues
-              for live collaboration. No email attachments required.
-          </div>
-          </p>
-        </div>
-
-        <div class="service-wrapper">
-          <img src="./Assets/images/icon-any-file.svg" alt="" class="icon-4">
-          <div class="service-desc">
-            <h2>Store any type of file</h2>
-            <p>
-              Whether you're sharing holidays photos or work documents, Fylo has
-              you covered allowing for all file types to be securely stored and
-              shared.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+        <a href="#" class="btn__cta">
+          Get Started
+        </a>
+      </section>
+    </main>
   </body>
 </html>
