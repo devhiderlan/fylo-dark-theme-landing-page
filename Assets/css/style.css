@@ -1,214 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
 
-/*  font-family: 'Raleway', sans-serif; */
+/* GLOBAL STYLES */
 
 :root {
-  --Dark-Blue-intro-email-bg: hsl(217, 27%, 15%);
-  --Dark-Blue-main-bg: hsl(217, 27%, 13%);
-  --Dark-Blue-footer-bg: hsl(215, 52%, 9%);
-  --Dark-Blue-testimonials-bg: hsl(219, 30%, 18%);
+  --intro-email-bg: hsl(217, 27%, 15%);
+  --main-bg: hsl(217, 27%, 13%);
+  --footer-bg: hsl(215, 52%, 9%);
+  --testimonials-bg: hsl(219, 30%, 18%);
   --Cyan: hsl(176, 68%, 64%);
   --Blue: hsl(198, 60%, 50%);
   --Light-Red: hsl(0, 100%, 63%);
   --White: hsl(0, 0%, 100%);
 }
 
-* {
+*, 
+*::after,
+*::before {
   margin: 0;
   padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: var(--Dark-Blue-main-bg);
+  background-color: var(--main-bg);
   color: var(--White);
 }
 
-nav {
-  width: 85%;
-  height: 15vh;
-  margin:auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+h2,
+h3,
+nav,
+.cta {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
 }
 
-.logo {
-  width: 130px;
-  height: auto;
-  cursor: pointer;
-}
-
-ul.nav__bar {
+ul,
+li {
   list-style: none;
-  display: flex;
 }
 
-ul.nav__bar li {
-  width: 100px;
-}
-
-ul.nav__bar li a {
-  text-decoration: none;
+a {
   color: var(--White);
-}
-
-ul.nav__bar li a:hover {
-  text-decoration: underline;
-
-}
-
-.section-1 {
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  text-align: center;
- 
-}
-.illustration {
-  width: 470px;
-  margin: auto;
-  margin-bottom: 30px;
-}
-
-.intro-desc {
-  width: 600px;
-  margin: auto;
-  margin-bottom: 30px;
-}
-
-.intro-desc h1 {
-  font-size: 2rem;
-  margin-bottom: 25px;
-  font-family: 'Raleway', sans-serif;
-}
-
-.intro-desc p {
-  width: 500px;
-  line-height: 2;
-  margin: 0 auto 30px;
-}
-
-#btn {
-  width: 250px;
-  padding: 14px;
-  outline: none;
-  border: none;
-  border-radius: 25px;
-  background-color: var(--Cyan);
-}
-
-#btn a {
   text-decoration: none;
-  color: var(--White);
 }
 
-.curvy-bg {
+h2 {
+  font: 48px;
+}
+
+/* NAV STYLES */
+
+.nav {
   width: 100%;
-  height: 40vh;
-  position: relative;
-  top: -210px;
-  z-index: -1;
-}
-
-.section-2 {
-  width: 100%;
-  height: auto;
-  position: relative;
-  top: -210px;
-  z-index: -1;
-}
-
-.services {
-  width: 70%;
-  min-height: 50vh;
-  margin: auto;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  text-align: center;
+  justify-content: space-between;
+  padding: 73px 80px;
+  background-color: var(--intro-email-bg);
 }
 
-.service-wrapper {
-  margin: 30px 0;
+.nav__items {
+  display: flex;
+  align-items: center;
+  
 }
 
-.service-wrapper img {
-  width: 70px;
-  height: auto;
-  line-height: 1.5rem;
-  margin-bottom: 50px;
+.nav__items :not(:last-child) {
+  padding-right: 56px;
 }
 
-.service-desc {
-  width: 400px;
-  line-height: 1.5rem;
-  margin-bottom: 25px;
-}
+/* HERO SECTION */
 
-.service-desc h2 {
-  font-size: 1.2rem;
-  font-family: 'Raleway', sans-serif;
-  margin-bottom: 10px;
-}
-
-@media screen and (ma-width: 375px) {
-  nav {
-    width: 90%;
-  }
-
-  .logo {
-    width: 70px;
-    height: auto;
-  }
-
-  ul.nav__bar li {
-    width: 70px;
-    margin-right: 5px;
-  }
-
-  ul.nav__bar li:nth-child(2) {
-    width: 50px; 
-  }
-  .section-1 {
-    width: 300px;
-    margin: auto;
-  }
-  .illustration {
-    width: 350px;
-  }
-
-  .intro-desc {
-    width: 300px;
-    margin: auto;
-  }
-
-  .intro-desc h1 {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .intro-desc p {
-    width: 318px;
-    line-height: 1.5rem;
-  }
-
-  #btn {
-    width: 200px;
-  }
-
-  .curvy-bg {
-    display: none;
-  }
-
-  /* Media query section 2 */
-
-  .services {
-    width: 85%;
-    margin: 250px auto 0;
-  }
+.hero {
+  display: flex;
 }
 
 
