@@ -13,7 +13,7 @@
   --White: hsl(0, 0%, 100%);
 }
 
-*, 
+*,
 *::after,
 *::before {
   margin: 0;
@@ -37,7 +37,7 @@ body {
 h2,
 h3,
 nav,
-.cta {
+.btn__cta {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
 }
@@ -53,10 +53,10 @@ a {
 }
 
 h2 {
-  font: 48px;
+  font-size: 48px;
 }
 
-/* NAV STYLES */
+/* NAV SECTION */
 
 .nav {
   width: 100%;
@@ -70,7 +70,6 @@ h2 {
 .nav__items {
   display: flex;
   align-items: center;
-  
 }
 
 .nav__items :not(:last-child) {
@@ -81,6 +80,61 @@ h2 {
 
 .hero {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  min-height: 100vh;
+  background: var(--intro-email-bg) url(../images/bg-curvy-desktop.svg) bottom
+    no-repeat;
+  background-size: 100% 278px;
 }
+
+.hero img {
+  height: 533px;
+  width: 739px;
+}
+.hero h2 {
+  margin: 46px;
+  width: 810px;
+}
+
+.hero p {
+  font-size: 22px;
+  font-weight: normal;
+  padding: 0 30px;
+  width: 742px;
+}
+
+.btn__cta {
+  background: linear-gradient(to right, var(--Cyan), var(--Blue));
+  border: none;
+  border-radius: 50px;
+  margin: 30px 0;
+  padding: 20px 0;
+  width: 280px;
+}
+
+/* FEATURES SECTION */
+
+.features {
+  margin: 130px 0;
+  padding: 0 280px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 94px 158px;
+}
+
+.feature {
+  text-align: center;
+}
+
+.feature h3 {
+  margin: 25px 0 12px 0;
+}
+
+/* EXTRA-DESCRIPTION SECTION */
 
 
