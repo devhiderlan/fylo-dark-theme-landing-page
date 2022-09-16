@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+/* GLOBAL STYLES */
+
+:root {
+  --intro-email-bg: hsl(217, 27%, 15%);
+  --main-bg: hsl(217, 27%, 13%);
+  --footer-bg: hsl(215, 52%, 9%);
+  --testimonials-bg: hsl(219, 30%, 18%);
+  --Cyan: hsl(176, 68%, 64%);
+  --Blue: hsl(198, 60%, 50%);
+  --Light-Red: hsl(0, 100%, 63%);
+  --White: hsl(0, 0%, 100%);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--main-bg);
+  color: var(--White);
+  margin: auto;
+  max-width: 1440px;
+}
+
+h2,
+h3,
+nav,
+.btn__cta {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  color: var(--White);
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+main {
+  position: relative;
+  padding-bottom: 200px;
+}
