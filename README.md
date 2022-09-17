@@ -11,7 +11,6 @@
 ## Layout Mobile
 ![](./Assets/images/fylo-dark-theme-landing-page-2.png)
 
-#
 ## Construido com:
 - HTML
 - CSS
