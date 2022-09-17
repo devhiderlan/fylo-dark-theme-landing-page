@@ -1,35 +1,31 @@
-Fylo dark theme landing page
+# Fylo dark theme landing page
 
 
 ## Visão Geral
 
-### Projeto de uma Landing Page com tema dark.
+### Projeto de uma Landing Page estática de oferta de serviço de armazenamento de dados
 
 #
 
-![](./Assets/design/desktop-design.jpg)
+![](./Assets/images/fylo-dark-theme-landing-page.png)
+## Layout Mobile
+#
+![](./Assets/images/fylo-dark-theme-landing-page-2.png)
 
 #
 ## Construido com:
 - HTML
 - CSS
+  - Display Flex
+  - Display Grid
 
 ## Funcionalidades
-- Cadastro de novos pacientes
-- Exlcusão de pacientes com duplo click na linha da tabela que deseja excluir
-- Filtro de pesquisa
-- Busca de pacientes via API
-
+- Página estatica de oferta de serviços de armazenamento de dados.
 ## O que eu aprendi:
-- Manipulação do DOM
-- Arrays, loops e estilos
-- Eventos
-- AJAX
-- Boas práticas com JavaScript
-
+- Como utilizar display flex e display grid no mesmo projeto.
 ## Link
 
-Veja o projeto aqui: 
+Veja o projeto aqui: [Acessar🌍](https://devhiderlan.github.io/fylo-dark-theme-landing-page/) 
 
 ## Autor
 
