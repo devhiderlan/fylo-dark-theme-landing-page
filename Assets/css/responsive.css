@@ -1,6 +1,6 @@
 /* MOBILE 375px */
 
-@media (max-width: 375px) {
+@media (min-width: 375px) and (max-width: 768px) {
   html {
     font-size: 0.9rem;
   }
