@@ -9,10 +9,8 @@
 
 ![](./Assets/images/fylo-dark-theme-landing-page.png)
 ## Layout Mobile
-#
 ![](./Assets/images/fylo-dark-theme-landing-page-2.png)
 
-#
 ## Construido com:
 - HTML
 - CSS
